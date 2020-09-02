@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <input type="search"/>
+
+    <input type="tel" />
+
+    <input name="numberfield" type="number" min="3" max="19" value="7" step="2"/>
+
+    <input name="emailfield" type="email" multiple />
+
+    <input type="url" />
+
+    <input id="rangefield" type="range" min="0" max="100" step="1" value="20"/>
+
+    <span id="val"></span>
+    <script>
+        var rangefield = document.getElementById("rangefield");
+        var showValue = function () {
+             document.getElementById("val").innerText = rangefield.value;
+              };
+        showValue();
+        rangefield.onchange = showValue;
+    </script>
+
+    <input type="color" />
+
+    <p><code>date</code>-Datum<br>
+        <input name="datefield" type="date" min="2016-01-01" max="2018-12-31" />
+    </p>
+    <p><code>time</code>-Zeit<br>
+        <input name="timefield" type="time" />
+    </p>
+    <p><code>datetime</code>-Datum + Zeit<br>
+        <input name="datetimefield" type="datetime-local" />
+    </p>
+    <p><code>month</code>-Monat<br>
+        <input name="monthfield" type="month" />
+    </p>
+    <p><code>week</code>-Woche<br>
+        <input name="weekfield" type="week" min="2016-W49" max="2016-W52" value="2016-W49" step="2" />
+    </p>
+</body>
+
+</html>
