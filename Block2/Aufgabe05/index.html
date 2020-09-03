@@ -15,18 +15,18 @@
         <input id="street-input" name="street" type="text" placeholder="Strasse" required pattern="^[A-Z]{1}[a-z|.|-]+$"/>
         <input id="streetnumber-input" name="streetNumber" type="number" placeholder="Nr. (opt.)"/>
         <br>
-        <input id="zipcode-input" name="zip-code" type="number" placeholder="PLZ" required/>
+        <input id="zipcode-input" name="zip-code" type="number" placeholder="PLZ" required min="0"/>
         <input id="location-input" name="location" type="text" list="locations" placeholder="Ort" required pattern="^[A-Z]{1}[a-z|.|-]+$"/>
         <datalist id="locations">
-            <option value="Luzern"></option>
-            <option value="Bern"></option>
-            <option value="Zürich"></option>
-            <option value="Sursee"></option>
-            <option value="Genf"></option>
-            <option value="Meierskappel"></option>
+            <option value="Luzern">Luzern</option>
+            <option value="Bern">Bern</option>
+            <option value="Zürich">Zürich</option>
+            <option value="Sursee">Sursee</option>
+            <option value="Genf">Genf</option>
+            <option value="Meierskappel">Meierskappel</option>
         </datalist>
         <br>
-        <input id="age-input" name="age" type="number" placeholder="Alter (opt.)"/>
+        <input id="age-input" name="age" type="number" placeholder="Alter (opt.)" min="0" max="150"/>
         <input id="email-input" name="email" type="email" placeholder="Email-Adresse" required/>
         <br>
         <button id="reset-button" type="reset" name="clear">Verwerfen</button>
