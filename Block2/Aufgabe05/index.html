@@ -8,10 +8,12 @@
 </head>
 <body>
     <form>
-        <input name="firstname" type="text" placeholder="Vorname" required/>
-        <input name="lastname" type="text" placeholder="Nachname" required/>
+        <input name="firstname" type="text" placeholder="Vorname" required pattern="^[A-Z]{1}[a-z]+$"/>
+        <input name="lastname" type="text" placeholder="Nachname" required pattern="^[A-Z]{1}[a-z]+$"/>
+        <br>
         <input name="street" type="text" placeholder="Strasse" required/>
-        <input name="streetNr" type="number" placeholder="Nr. (opt.)"/>
+        <input name="streetNumber" type="number" placeholder="Nr. (opt.)"/>
+        <br>
         <input name="zip-code" type="number" placeholder="PLZ" required/>
         <input name="location" type="text" list="locations" placeholder="Ort" required/>
         <datalist id="locations">
@@ -22,8 +24,10 @@
             <option value="Genf"></option>
             <option value="Meierskappel"></option>
         </datalist>
+        <br>
         <input name="age" type="number" placeholder="Alter (opt.)"/>
         <input name="email" type="email" placeholder="Email-Adresse" required/>
+        <br>
         <button type="reset" name="clear">Verwerfen</button>
         <button type="submit" name="submit">Senden</button>
     </form>
