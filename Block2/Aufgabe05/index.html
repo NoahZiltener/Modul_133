@@ -15,7 +15,7 @@
         <input id="street-input" name="street" type="text" placeholder="Strasse" required pattern="^[A-Z]{1}[a-z|.|-]+$"/>
         <input id="streetnumber-input" name="streetNumber" type="number" placeholder="Nr. (opt.)"/>
         <br>
-        <input id="zipcode-input" name="zip-code" type="number" placeholder="PLZ" required min="0"/>
+        <input id="zipcode-input" name="zip-code" type="number" placeholder="PLZ" required min="0" pattern="([1-468][0-9]|[57][0-7]|9[0-6])[0-9]{2}"/>
         <input id="location-input" name="location" type="text" list="locations" placeholder="Ort" required pattern="^[A-Z]{1}[a-z|.|-]+$"/>
         <datalist id="locations">
             <option value="Luzern">Luzern</option>
