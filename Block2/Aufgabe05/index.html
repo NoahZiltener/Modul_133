@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aufgabe 5</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form>
-        <input name="firstname" type="text" placeholder="Vorname" required pattern="^[A-Z]{1}[a-z]+$"/>
-        <input name="lastname" type="text" placeholder="Nachname" required pattern="^[A-Z]{1}[a-z]+$"/>
+    <form id="form">
+        <input id="firstname-input" name="firstname" type="text" placeholder="Vorname" required pattern="^[A-Z]{1}[a-z]+$"/>
+        <input id="lastname-input" name="lastname" type="text" placeholder="Nachname" required pattern="^[A-Z]{1}[a-z]+$"/>
         <br>
-        <input name="street" type="text" placeholder="Strasse" required pattern="^[A-Z]{1}[a-z|.|-]+$"/>
-        <input name="streetNumber" type="number" placeholder="Nr. (opt.)"/>
+        <input id="street-input" name="street" type="text" placeholder="Strasse" required pattern="^[A-Z]{1}[a-z|.|-]+$"/>
+        <input id="streetnumber-input" name="streetNumber" type="number" placeholder="Nr. (opt.)"/>
         <br>
-        <input name="zip-code" type="number" placeholder="PLZ" required/>
-        <input name="location" type="text" list="locations" placeholder="Ort" required pattern="^[A-Z]{1}[a-z|.|-]+$"/>
+        <input id="zipcode-input" name="zip-code" type="number" placeholder="PLZ" required/>
+        <input id="location-input" name="location" type="text" list="locations" placeholder="Ort" required pattern="^[A-Z]{1}[a-z|.|-]+$"/>
         <datalist id="locations">
             <option value="Luzern"></option>
             <option value="Bern"></option>
@@ -25,11 +26,11 @@
             <option value="Meierskappel"></option>
         </datalist>
         <br>
-        <input name="age" type="number" placeholder="Alter (opt.)"/>
-        <input name="email" type="email" placeholder="Email-Adresse" required/>
+        <input id="age-input" name="age" type="number" placeholder="Alter (opt.)"/>
+        <input id="email-input" name="email" type="email" placeholder="Email-Adresse" required/>
         <br>
-        <button type="reset" name="clear">Verwerfen</button>
-        <button type="submit" name="submit">Senden</button>
+        <button id="reset-button" type="reset" name="clear">Verwerfen</button>
+        <button id="submit-button" type="submit" name="submit">Senden</button>
     </form>
 </body>
 </html>
