@@ -7,6 +7,25 @@
     <title>Aufgabe 5</title>
 </head>
 <body>
-    
+    <form>
+        <input name="firstname" type="text" placeholder="Vorname" required/>
+        <input name="lastname" type="text" placeholder="Nachname" required/>
+        <input name="street" type="text" placeholder="Strasse" required/>
+        <input name="streetNr" type="number" placeholder="Nr. (opt.)"/>
+        <input name="zip-code" type="number" placeholder="PLZ" required/>
+        <input name="location" type="text" list="locations" placeholder="Ort" required/>
+        <datalist id="locations">
+            <option value="Luzern"></option>
+            <option value="Bern"></option>
+            <option value="Zürich"></option>
+            <option value="Sursee"></option>
+            <option value="Genf"></option>
+            <option value="Meierskappel"></option>
+        </datalist>
+        <input name="age" type="number" placeholder="Alter (opt.)"/>
+        <input name="email" type="email" placeholder="Email-Adresse" required/>
+        <button type="reset" name="clear">Verwerfen</button>
+        <button type="submit" name="submit">Senden</button>
+    </form>
 </body>
 </html>
