@@ -17,3 +17,13 @@ function letTest() {
     console.log(x);
 }
 letTest();
+
+function constTest() {
+    const x = 31;
+    if(true){
+        const x = 71;
+        console.log(x);
+    }
+    console.log(x);
+}
+constTest();
