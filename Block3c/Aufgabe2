@@ -1,0 +1,1 @@
+Lösung: Mehrere Eventlistener könne auf das gleiche event höhren. onClick kann nur eine Funktion entgegen nehmen;
