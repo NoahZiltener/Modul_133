@@ -24,5 +24,3 @@ function calculatePrice(screws, nuts, grommets){
 
     return price
 }
-
-
